@@ -21,6 +21,8 @@ export default function Home() {
   }
 
   if (isAuthenticated) {
+    // debug
+    console.log(user)
     return (
       <div>
         Hello {user.name}{' '}
