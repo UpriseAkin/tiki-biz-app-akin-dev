@@ -1,9 +1,10 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import Head from 'next/head'
+import login from './api/login';
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default async function Home() {
   const {
     isLoading,
     isAuthenticated,
@@ -22,6 +23,10 @@ export default function Home() {
 
   if (isAuthenticated) {
     console.log(user) // debug
+    let db_response;
+    await login();
+    db_response = login();
+    console.log(db_response);
     return (
       <div>
         Hello {user.name}{' '}
