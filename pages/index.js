@@ -32,6 +32,11 @@ export default function Home() {
         user_id:  {user.user_id}
         <br/> 
         user_id: {user.identities[0].user_id}
+        <br/> 
+        updated_at: {user.updated_at}
+        <br/> 
+        email_verified: {user.email_verified}
+
         <button onClick={() => logout({ returnTo: window.location.origin })}>
           Log out
         </button>
