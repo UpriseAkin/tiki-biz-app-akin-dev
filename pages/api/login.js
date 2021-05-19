@@ -1,7 +1,7 @@
 
 const login = async () => {
 
-    fetch('/.netlify/functions/readme-login', {
+    fetch('/.netlify/functions/db-client', {
       method: 'POST',
       body: 'query'
     }).then((res) => res.text()).then((res) => {

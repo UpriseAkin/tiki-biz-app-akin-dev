@@ -22,11 +22,11 @@ export default async function Home() {
   }
 
   if (isAuthenticated) {
-    console.log(user) // debug
-    let db_response;
-    await login();
-    db_response = login();
-    console.log(db_response);
+    // console.log(user) // debug
+    // let db_response;
+    // await login();
+    // db_response = login();
+    // console.log(db_response);
     return (
       <div>
         Hello {user.name}{' '}
